@@ -6,14 +6,16 @@
     text-decoration: none;
     font-family: "Markazi Text", serif;
 }
+
 body{
     background-color: grey;
     width: 100%;
-    height: 100vh;
-    background-image: url("img/lineageserver.jpg");
+    height: 100vh;    
+    position: relative;
+    background-image: url(img/lineageserver.jpg);
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    
 }
 header{
     backdrop-filter: blur(1px);
@@ -25,25 +27,29 @@ header{
 
 }
 main{
-    padding-inline: 20%;
+    background-size: cover;
+    padding-inline: 20% !important;
 }
 
 .menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #33333398;
+    background-color: rgba(51, 51, 51, 0.6);
     color: white;
     padding: 10px 20%;
     position: relative;
-    max-width: 100%;
+    width: 100%;
     height: 5rem;
-    max-height: 5rem;
 }
 .menu a{
     font-weight: 600;
     font-size: 30px;
     color: white;
+    transition: color 0.3s ease;
+}
+.menu a:hover {
+    color: #ddd;
 }
 .imgp{
     max-width: 7%;
@@ -101,12 +107,12 @@ article{
     margin-bottom: 10rem;
 }
 article img{
-    max-width: 90%;
-    object-fit: cover;
-    
+    width: 100%;   
 }
 article h1{
-    font-size: 40px;
+    border-radius: 10%;
+    padding: 1rem;
+    font-size: 40px !important;
     text-align: center;
     color: white;
     backdrop-filter: blur(1px);
@@ -114,7 +120,8 @@ article h1{
 .descargas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 4rem;
+    flex-wrap: wrap;
 }
 .cliente{
     backdrop-filter: blur(1px);
@@ -141,4 +148,31 @@ article h1{
     color: white;
     border: 1px solid #333333d2;
     font-size: 25px;
+}
+.descarga2 {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    color: white;
+    background-color: #333333d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.descarga2:hover {
+    background-color: #555555d2;
+    transform: scale(1.05);
+}
+
+.descarga2:active {
+    background-color: #222222d2;
+    transform: scale(0.95);
+}
+aside{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
