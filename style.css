@@ -175,4 +175,78 @@ aside{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #333333d2;
+    padding: 1rem;
+    font-size: 50px;
+    color: white;
+
 }
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.btnrates{
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    color: white;
+    background-color: #333333d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+.btnrates:hover {
+    background-color: #555555d2;
+    transform: scale(1.05);
+}
+
+.btnrates:active {
+    background-color: #222222d2;
+    transform: scale(0.95);
+}
+.caracteristicas {
+    display: flex; 
+    gap: 20px; 
+  }
+  
+.rates {
+    flex: 1; 
+    background-color: #333333d2; 
+    border: 1px solid #333333d2; 
+    border-radius: 8px; 
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+  
+.rates h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #333333d2;
+    padding-bottom: 5px;
+}
+  
+.rates ul {
+    padding: 0;
+}
+  
+.rates li {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .rates li strong {
+    color: white; 
+  }
+  
+  .rates li p {
+    color: #0078D7; 
+    
+  }
