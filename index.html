@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
@@ -53,7 +52,7 @@
         </section>
         <article>
             
-            <h1>Descargas</h1>
+            <h1 class="titulo">Descargas</h1>
             <div class="descargas">
                 <div class="cliente">
                     <h2>Descargar Cliente</h2>
@@ -71,20 +70,20 @@
         </article>
         <aside>
             <h1>Caracteristicas</h1>
-            <div>
-                <div class="botones">
-                    <input type="button" value="Rates" class="btnrates">
-                    <input type="button" value="General" class="btnrates">
-                    <input type="button" value="Otras" class="btnrates">
-                    <input type="button" value="Balance" class="btnrates">
-                    <input type="button" value="Castillos & Clanes" class="btnrates">
-                    <input type="button" value="Raid Bosses" class="btnrates">
-                </div>
+            <div class="botones">
+                <input type="button" value="Rates" class="btnrates hover">
+                <input type="button" value="General" class="btnrates2 hover">
+                <input type="button" value="Otras" class="btnrates3 hover">
+                <input type="button" value="Balance" class="btnrates4 hover">
+                <input type="button" value="Castillos & Clanes" class="btnrates5 hover">
+                <input type="button" value="Raid Bosses" class="btnrates6 hover">
+            </div>
+            <div class="aside">
                 <ul class="caracteristicas">
                     <li class="rates">
                       <h1>Rates</h1>
                       <ul>
-                        <li><strong>Experiencia:</strong> <p>x10</p></li>
+                        <li><img src="img/exp.png" alt=""><strong>Experiencia:</strong> <p>x10</p></li>
                         <li><strong>Skill Points:</strong> <p>x10</p></li>
                         <li><strong>Drop:</strong> <p>x5</p></li>
                         <li><strong>Spoil:</strong> <p>x20</p></li>
@@ -95,7 +94,7 @@
                     <li class="rates">
                       <h1>Rates Vip</h1>
                       <ul>
-                        <li><strong>Experiencia:</strong> <p>+ 20%</p></li>
+                        <li><img src="img/exp.png" alt=""><strong>Experiencia:</strong> <p>+ 20%</p></li>
                         <li><strong>Skill Points:</strong> <p>+ 20%</p></li>
                         <li><strong>Drop:</strong> <p>+ 20%</p></li>
                         <li><strong>Spoil:</strong> <p>+ 20%</p></li>
@@ -104,11 +103,35 @@
                       </ul>
                     </li>
                   </ul>
-                <ul>
+                <ul class="general">
+                    <li><p> Subclass de overlord habilitada.</p></li>
+                    <li><p> Se puede switch subclass.</p></li>
+                    <li><p> No se puede cancelar subclass.</p></li>
+                    <li><p> Bonus de Rates, VIP a cambio de donación (max +20%) - Duración 1 Mes.</p></li>
+                    <li><p> Primera profesión: Gratis.</p></li>
+                    <li><p> Segunda profesión: Gratis</p></li>
+                    <li><p> Tercera profesión: por NPC (Requiere AA) (Recompensa 1 Secret Book of Giant) No se adquiere skills.</p></li>
+                    <li><p> SubClass: Acumulativas base +3 sin skills de 3ra class.</p></li>
+                    <li><p> NPC Shop, Buffer, Classes, Rewards y Services.</p></li>
+                    <li><p> Block Buff General - Block Buff.</p></li>
+                    <li><p> 24 Slots de Buff.</p></li>
+                    <li><p> Auto PickUP.</p></li>
+                    <li><p> Drop: Barrido cada 30 minutos.</p></li>
+                    <li><p> Instancias: Todas en modo retail.</p></li>
+                    <li><p> Quests: Todas en modo retail excepto la de Subclass que fue deshabilitada.</p></li>
+                    <li><p> Aprendizaje de Skills: Automaticos.</p></li>
+                    <li><p> Noblesse: Por NPC, requiere 5 Lunargent + 1 HellFire Oil + 20kk de AA o Quest. No requiere SubClass.</p></li>
+                    <li><p> Manor System: Desactivado.</p></li>
+                    <li><p> Seven Signs: Drop directo AA.</p></li>
+                    <li><p> Eventos: Event-Medal.</p></li>
+                    <li><p> Los mejores Eventos Team vs Team (CTF, DTB, SIEGE, DM, LTS, LMS).</p></li>
+                    <li><p> Sistema de Rewards: PvP, PK, War, Boss, Siege, TvT.</p></li>
+                    <li><p> Spawn Protection. Beneficio: Protección de 15 seg al viajar hacia fuera de la ciudad.</p></li>
+                    <li><p> Casamientos habilitados. Beneficio: Teleport Go to Love.</p></li>
 
                 </ul>
                 <ul>
-
+                   
                 </ul>
                 <ul>
 
@@ -123,8 +146,9 @@
             </div>
         </aside>
         <footer>
-
+            
         </footer>
     </main>
+    <script src="function.js"></script>
 </body>
 </html>
